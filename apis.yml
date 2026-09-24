@@ -1,23 +1,48 @@
 aid: alter-learning-educational-platform
+
 name: Alter Learning Educational Platform
+
 description: 'Alter Learning Educational Platform is a company surfaced via the API Evangelist harvest
   backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
 url: https://raw.githubusercontent.com/api-evangelist/alter-learning-educational-platform/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-24'
+
 modified: '2026-09-24'
+
 tags:
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/alter-learning-educational-platform-hosts.yml
+- type: Vendors
+  url: vendors/alter-learning-educational-platform-vendors.yml
+- type: DomainSecurity
+  url: security/alter-learning-educational-platform-domain-security.yml
 - type: Website
   url: https://www.nasdaqprivatemarket.com/
+
+apis: []
+x-enrichment:
+  date: '2026-09-24'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
